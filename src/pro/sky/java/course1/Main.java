@@ -6,9 +6,16 @@ public class Main {
         // Домашнее задание 1.4.
         // Задание 1.
         int i = 1;
-        while (i < 11) {System.out.print(i); i++; System.out.print(" ");}
+        while (i < 11) {
+            System.out.print(i);
+            i++;
+            System.out.print(" ");
+        }
         System.out.println();
-        for (int j = 10; j > 0; j--) {System.out.print(j); System.out.print(" ");}
+        for (int j = 10; j > 0; j--) {
+            System.out.print(j);
+            System.out.print(" ");
+        }
 
         // Задание 2.
         System.out.println(" ");
@@ -18,17 +25,22 @@ public class Main {
         while (numberOfWeek < 5) {
             System.out.println("Сегодня пятница, " + dataOfFriday + "-е число. Необходимо подготовить отчет.");
             dataOfFriday += 7;
-            numberOfWeek++;}
+            numberOfWeek++;
+        }
 
         // Задание 3.
         System.out.println(" ");
-        int lastYear = 1822;
-        int futureYear = 2122;
+        int curentYear = 2022;
+        int lastYear = curentYear - 200;
+        int futureYear = curentYear + 100;
         int j = lastYear;
 
         while (j < futureYear) {
-            if (j % 79 == 0) {System.out.println(j);
-            } j++;
-        }}
+            if (j % 79 == 0) {
+                System.out.println(j);
+            }
+            j++;
+        }
+    }
 }
 
